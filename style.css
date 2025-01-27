@@ -1,30 +1,53 @@
-/*light
-#260502
-#fffaf9
-#f33710
-#90f983
-#53f69d
-dark
-#fddbd8
-#050100
-#ed320c
-#137a06
-#09aa51
-*/
+:root {
+  /*light-mode*/
+  --light-txt-color: #260502;
+  --light-bg-color: #fffaf9;
+  --light-prim-color: #f33710;
+  --light-sec-color: #90f983;
+  --light-acc-color: #53f69d;
+
+  /*dark-mode*/
+  --dark-txt-color: #fddbd8;
+  --dark-bg-color: #050100;
+  --dark-prim-color: #ed320c;
+  --dark-sec-color: #137a06;
+  --dark-acc-color: #09aa51;
+}
+
 body {
   margin: 0;
   display: flexbox;
   flex-direction: column;
 }
 header {
+  display: flex;
   height: 10vh;
-  background-color: rgb(42, 99, 99);
+  background-color: var(--light-acc-color);
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 main {
+  display: flex;
   height: 85vh;
-  background-color: aqua;
+  background-color: var(--light-bg-color);
+  gap: 1rem;
+}
+main > .note {
+  background-color: var(--light-bg-color);
+  color: var(--light-txt-color);
+  height: fit-content;
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
 }
 footer {
+  display: flex;
   height: 5vh;
-  background-color: rgb(107, 36, 121);
+  background-color: var(--light-acc-color);
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
