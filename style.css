@@ -1,0 +1,30 @@
+/*light
+#260502
+#fffaf9
+#f33710
+#90f983
+#53f69d
+dark
+#fddbd8
+#050100
+#ed320c
+#137a06
+#09aa51
+*/
+body {
+  margin: 0;
+  display: flexbox;
+  flex-direction: column;
+}
+header {
+  height: 10vh;
+  background-color: rgb(42, 99, 99);
+}
+main {
+  height: 85vh;
+  background-color: aqua;
+}
+footer {
+  height: 5vh;
+  background-color: rgb(107, 36, 121);
+}
